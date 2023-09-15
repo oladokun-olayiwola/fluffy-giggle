@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5555
 app.use(bodyParser.json());
 
 app.get('/', () => {
-    return "Hello World"
+    res.send("Welcome")
 }) 
 app.post('/api', createPerson)
 app.get('/api/:user_id', getPerson) 
